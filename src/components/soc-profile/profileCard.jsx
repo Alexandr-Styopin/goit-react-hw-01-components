@@ -2,8 +2,7 @@ export default function ProfileCard({ avatar, name, tag, location, stats }) {
   return (
     <div className="profile">
       <div className="description">
-        <img src={avatar} alt={name} className="avatar" />
-        ``
+        <img src={avatar} alt={name} className="avatar" width="100px" />
         <p className="name">{name}</p>
         <p className="tag">{tag}</p>
         <p className="location">{location}</p>
