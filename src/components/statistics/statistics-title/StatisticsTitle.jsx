@@ -1,3 +1,4 @@
+import css from '../statistics-title/StatisticsTitle.module.css';
 export default function StatisticsTitle({ title }) {
-  return <h2 className="title">{title}</h2>;
+  return <h2 className={css.title}>{title}</h2>;
 }

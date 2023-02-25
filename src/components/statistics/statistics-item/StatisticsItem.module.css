@@ -1,0 +1,16 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  /* border: 1px solid tomato; */
+}
+.label {
+  font-size: 12px;
+}
+.percentage {
+  margin-top: 10px;
+}

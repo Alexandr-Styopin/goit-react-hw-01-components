@@ -1,9 +1,11 @@
+import css from '../friend-item/FriendItem.module.css';
 export default function FriendItems({ avatar, name, isOnline }) {
+  const status = isOnline ? css.statusOnline : css.statusOffline;
   return (
-    <li className="item">
-      <span className="status">{isOnline}</span>
-      <img className="avatar" src={avatar} alt={name} width="48" />
-      <p className="name">{name}</p>
+    <li className={css.item}>
+      <span className={status}></span>
+      <img className={css.avatar} src={avatar} alt={name} width="96px" />
+      <p className={css.name}>{name}</p>
     </li>
   );
 }

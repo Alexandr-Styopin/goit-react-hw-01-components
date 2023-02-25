@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1200px;
+}
+.taskItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 50px;
+}
+
+.taskTitle {
+  text-align: center;
+}
+.task {
+  margin-top: 15px;
+}

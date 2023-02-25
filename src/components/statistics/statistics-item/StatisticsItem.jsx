@@ -1,8 +1,12 @@
-export default function StatisticsItem(statItem) {
+import css from '../statistics-item/StatisticsItem.module.css';
+import RandomColor from '../RandomColor';
+
+export default function StatisticsItem({ id, label, percentage }) {
+  const color = RandomColor();
   return (
-    <li className="item">
-      <span className="label">{statItem.label}</span>
-      <span className="percentage">{statItem.percentage}%</span>
+    <li className={css.item} style={{ backgroundColor: `${color}` }}>
+      <span className={css.label}>{label}</span>
+      <span className={css.percentage}>{percentage}%</span>
     </li>
   );
 }
